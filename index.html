@@ -3,88 +3,291 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Zahida Amina</title>
+    <script>document.documentElement.classList.add('js');</script>
+    <title>Zahida Amina — Portfolio</title>
+    <meta name="description" content="Portfolio of Zahida Amina — Computer Science graduate specializing in web development, software quality assurance, and design.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
 </head>
 <body>
-    <main>
-        <h1>Zahida Amina</h1>
-        <section>
-            <h2>About Me</h2>
-            <p>I’m <b>Zahida Amina</b>, a Computer Science graduate with a strong interest in <b>web development, software quality assurance, and creative design</b>. I enjoy turning ideas into practical, user-friendly, reliable, and visually appealing digital experiences.
-                I have hands-on experience with <i>PHP, Laravel, Tailwind CSS, MySQL, HTML, CSS, Git/GitHub, and Software QA &amp; Testing</i>. I recently completed my Final Year Project, <b><u>LensLocation</u></b>, a photography location rental marketplace, where I worked across the development process from design to deployment.
-                I also have practical experience in Quality Assurance and software testing, including testing web applications, identifying issues, verifying functionality, and ensuring a better user experience. Alongside development and QA, my background in graphic design and UI/UX allows me to combine technical functionality with creative and user-focused design.
-                I’m continuously learning, improving my technical skills, and looking for opportunities where I can contribute to real-world projects while growing as a Web Developer and QA Professional.</p>
-        </section>
-        <section>
-            <h2>Skills</h2>
-            <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>Tailwind CSS</li>
-                <li>PHP</li>
-                <li>Laravel</li>
-                <li>MySQL</li>
-                <li>JavaScript</li>
-                <li>Git/GitHub</li>
-                <li>Responsive Web Design</li>
-                <li>Database Design</li>
-                <li>Software Quality Assurance &amp; Testing</li>
-                <li>UI/UX Design</li>
-                <li>Graphic Design</li>
-                <li>Figma &amp; Canva</li>
-                <li>Adobe Photoshop</li>
-                <li>Adobe Illustrator</li>
-                <li>Problem Solving</li>
-                <li>Team Collaboration</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Projects</h2>
-            <ul>
-                <b>LensLocation</b> A photography location rental marketplace built with Laravel, Tailwind CSS, and MySQL. I worked on the full development process, from design to deployment.<br>
-                <b>Portfolio Website</b> A personal portfolio website showcasing my skills, projects, and contact information. Built with HTML, CSS, and JavaScript.<br>
-                <b>Designer portfolio</b>
-	            Designed UI mockups in Figma, then built and deployed a responsive static portfolio at zahidaamina.github.io, optimized for readability and cross-browser compatibility.
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
-            </ul>
-        </section>
-        <section>
-            <h2>Education</h2>
-            <p>Bachelor of Science in Computer Science, Virtual University of Pakistan (2023-2026)<br>
-            FSC (Pre-Engineering), Government College for Women, Kasur (2020-2022)</p>
-        </section>
-        <section>
-            <h2>Experience</h2>
-            <b>Web Development Intern, Virtual University Software House (2025-2026)</b>
-            <p>-Building and maintaining responsive, mobile-friendly web applications using PHP, Laravel, and Tailwind CSS.<br>
-                - Core contributor to LensLocation, a photography location rental marketplace connecting location owners with customers booking spaces for photoshoots — developing listing, browsing, and booking features end to end.<br>
-                - Designing MySQL database schemas and writing optimized queries for dynamic, data-driven pages.<br>
-                - Collaborating in a development team using Git and GitHub for version control, branching, and code review
-            </p>
+    <header class="site-header">
+        <div class="site-header__inner">
+            <a class="brand" href="#home" aria-label="Zahida Amina — back to top">Zahida Amina</a>
 
-            <b>Software Quality Assurance Intern, SecAITech Company (2023-2024)</b>
-            <p>- Conducted testing of web applications, identified issues, and verified functionality.<br>
-                - Collaborated with developers to ensure a better user experience.</p>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+                <span class="nav-toggle__bar" aria-hidden="true"></span>
+                <span class="nav-toggle__bar" aria-hidden="true"></span>
+                <span class="nav-toggle__bar" aria-hidden="true"></span>
+                <span class="sr-only">Menu</span>
+            </button>
+
+            <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+                <ul class="site-nav__list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience &amp; Education</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+        <!-- Home / Hero -->
+        <section id="home" class="hero" aria-labelledby="home-heading">
+            <div class="container hero__inner">
+                <div class="hero__content">
+                    <h1 id="home-heading">Zahida Amina</h1>
+                    <p class="hero__role">Web Developer · Software QA · Designer</p>
+                    <p class="hero__intro">Computer Science graduate building reliable, user-friendly, and visually appealing digital experiences.</p>
+                    <div class="hero__actions">
+                        <a class="btn" href="#projects">View my work</a>
+                        <a class="btn btn--ghost" href="#contact">Get in touch</a>
+                    </div>
+                </div>
+                <div class="hero__media">
+                    <img src="assets/profile.svg" alt="Portrait of Zahida Amina" width="320" height="320">
+                </div>
+            </div>
         </section>
-        <section>
-            <h2>Certifications</h2>
-            <ul>
-                •	Programming Essentials in C++ — Cisco Networking Academy <br>
-                •	Introduction to Networks — Cisco Networking Academy<br>
-                •	Graphic Designing — DigiSkills.pk (National Freelancing Program)<br>    
-            </ul>
+
+        <!-- About -->
+        <section id="about" aria-labelledby="about-heading">
+            <div class="container">
+                <h2 id="about-heading">About Me</h2>
+                <p class="about__bio">I'm <strong>Zahida Amina</strong>, a Computer Science graduate with a strong interest in web development, software quality assurance, and creative design. I turn ideas into practical, user-friendly, reliable, and visually appealing digital experiences.</p>
+                <dl class="facts">
+                    <div class="fact">
+                        <dt>Degree</dt>
+                        <dd>BSc Computer Science</dd>
+                    </div>
+                    <div class="fact">
+                        <dt>Focus</dt>
+                        <dd>Web Development · QA · UI/UX</dd>
+                    </div>
+                    <div class="fact">
+                        <dt>Experience</dt>
+                        <dd>Web Dev &amp; QA Internships</dd>
+                    </div>
+                    <div class="fact">
+                        <dt>Based in</dt>
+                        <dd>Kasur, Pakistan</dd>
+                    </div>
+                </dl>
+            </div>
         </section>
-        <section>
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:aminabibihere@gmail.com">aminabibihere@gmail.com</a></p>
-            <p>Phone: +92 3124616015</p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/zahidaamina/" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/zahidaamina/</a></p>
-            <p>GitHub: <a href="https://github.com/zahidaamina" target="_blank" rel="noopener noreferrer">https://github.com/zahidaamina</a></p>
+
+        <!-- Skills -->
+        <section id="skills" aria-labelledby="skills-heading">
+            <div class="container">
+                <h2 id="skills-heading">Skills</h2>
+                <div class="skills-grid">
+                    <article class="skill-card">
+                        <h3>Web Development</h3>
+                        <ul class="skill-card__tags">
+                            <li>PHP</li>
+                            <li>Laravel</li>
+                            <li>MySQL</li>
+                            <li>JavaScript</li>
+                            <li>Tailwind CSS</li>
+                        </ul>
+                    </article>
+                    <article class="skill-card">
+                        <h3>Quality Assurance</h3>
+                        <ul class="skill-card__tags">
+                            <li>Software QA &amp; Testing</li>
+                            <li>Manual Testing</li>
+                            <li>Bug Tracking</li>
+                        </ul>
+                    </article>
+                    <article class="skill-card">
+                        <h3>Design</h3>
+                        <ul class="skill-card__tags">
+                            <li>UI/UX</li>
+                            <li>Adobe Photoshop</li>
+                            <li>Adobe Illustrator</li>
+                        </ul>
+                    </article>
+                    <article class="skill-card">
+                        <h3>Tools &amp; Workflow</h3>
+                        <ul class="skill-card__tags">
+                            <li>Git/GitHub</li>
+                            <li>Problem Solving</li>
+                            <li>Team Collaboration</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" aria-labelledby="projects-heading">
+            <div class="container">
+                <h2 id="projects-heading">Projects</h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <h3>LensLocation</h3>
+                        <p class="project-card__desc">A photography location rental marketplace connecting location owners with customers — my final-year project, built end to end from design to deployment.</p>
+                        <ul class="project-card__tags">
+                            <li>Laravel</li>
+                            <li>Tailwind CSS</li>
+                            <li>MySQL</li>
+                            <li>PHP</li>
+                        </ul>
+                        <a class="project-card__link" href="https://github.com/zahidaamina/lenslocation" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
+                    </article>
+                    <article class="project-card">
+                        <h3>Portfolio Website</h3>
+                        <p class="project-card__desc">This site — a personal portfolio showcasing my skills, projects, and contact information, built with plain HTML, CSS, and JavaScript.</p>
+                        <ul class="project-card__tags">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                        <a class="project-card__link" href="https://github.com/zahidaamina/portfolio" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
+                    </article>
+                    <article class="project-card">
+                        <h3>Designer Portfolio</h3>
+                        <p class="project-card__desc">A responsive static portfolio designed in Figma and deployed on GitHub Pages at zahidaamina.github.io.</p>
+                        <ul class="project-card__tags">
+                            <li>Figma</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                        <a class="project-card__link" href="https://github.com/zahidaamina/designer-portfolio" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Education -->
+        <section id="experience" aria-labelledby="experience-heading">
+            <div class="container">
+                <h2 id="experience-heading">Experience &amp; Education</h2>
+                <ol class="timeline">
+                    <li class="timeline__item">
+                        <h3>Web Development Intern</h3>
+                        <p class="timeline__meta">
+                            <span class="timeline__org">Virtual University Software House</span>
+                            <span class="timeline__date"><time datetime="2025">2025–2026</time></span>
+                        </p>
+                        <p class="timeline__desc">Built and maintained responsive, mobile-friendly web applications using PHP, Laravel, and Tailwind CSS, as a core contributor to LensLocation.</p>
+                    </li>
+                    <li class="timeline__item">
+                        <h3>Software QA Intern</h3>
+                        <p class="timeline__meta">
+                            <span class="timeline__org">SecAITech Company</span>
+                            <span class="timeline__date"><time datetime="2023">2023–2024</time></span>
+                        </p>
+                        <p class="timeline__desc">Tested web applications, identified issues, verified functionality, and collaborated with developers to improve the user experience.</p>
+                    </li>
+                    <li class="timeline__item">
+                        <h3>BS Computer Science</h3>
+                        <p class="timeline__meta">
+                            <span class="timeline__org">Virtual University of Pakistan</span>
+                            <span class="timeline__date"><time datetime="2023">2023–2026</time></span>
+                        </p>
+                        <p class="timeline__desc">Bachelor of Science in Computer Science, with a focus on software development and quality assurance.</p>
+                    </li>
+                    <li class="timeline__item">
+                        <h3>FSC (Pre-Engineering)</h3>
+                        <p class="timeline__meta">
+                            <span class="timeline__org">Government College for Women, Kasur</span>
+                            <span class="timeline__date"><time datetime="2020">2020–2022</time></span>
+                        </p>
+                        <p class="timeline__desc">Higher secondary education with a focus on pre-engineering.</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Certifications -->
+        <section id="certifications" aria-labelledby="certifications-heading">
+            <div class="container">
+                <h2 id="certifications-heading">Certifications</h2>
+                <ul class="certifications">
+                    <li class="certification">
+                        <h3>Programming Essentials in C++</h3>
+                        <p>Cisco Networking Academy</p>
+                    </li>
+                    <li class="certification">
+                        <h3>Introduction to Networks</h3>
+                        <p>Cisco Networking Academy</p>
+                    </li>
+                    <li class="certification">
+                        <h3>Graphic Designing</h3>
+                        <p>DigiSkills.pk — National Freelancing Program</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" aria-labelledby="contact-heading">
+            <div class="container">
+                <h2 id="contact-heading">Contact</h2>
+                <div class="contact">
+                    <div class="contact__details">
+                        <p class="contact__intro">Have a project in mind or just want to say hello? I'd love to hear from you.</p>
+                        <ul class="contact__list">
+                            <li>
+                                <span class="contact__label">Email</span>
+                                <a href="mailto:aminabibihere@gmail.com">aminabibihere@gmail.com</a>
+                            </li>
+                            <li>
+                                <span class="contact__label">Phone</span>
+                                <a href="tel:+923124616015">+92 312 4616015</a>
+                            </li>
+                            <li>
+                                <span class="contact__label">LinkedIn</span>
+                                <a href="https://www.linkedin.com/in/zahidaamina/" target="_blank" rel="noopener noreferrer">linkedin.com/in/zahidaamina</a>
+                            </li>
+                            <li>
+                                <span class="contact__label">GitHub</span>
+                                <a href="https://github.com/zahidaamina" target="_blank" rel="noopener noreferrer">github.com/zahidaamina</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <form class="contact-form" id="contact-form" action="mailto:aminabibihere@gmail.com" method="post" enctype="text/plain" novalidate>
+                        <div class="field">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" autocomplete="name" required aria-describedby="name-error">
+                            <p class="field__error" id="name-error" role="alert"></p>
+                        </div>
+                        <div class="field">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" autocomplete="email" required aria-describedby="email-error">
+                            <p class="field__error" id="email-error" role="alert"></p>
+                        </div>
+                        <div class="field">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required aria-describedby="message-error"></textarea>
+                            <p class="field__error" id="message-error" role="alert"></p>
+                        </div>
+                        <button class="btn" type="submit">Send message</button>
+                    </form>
+                </div>
+            </div>
         </section>
     </main>
+
+    <footer class="site-footer">
+        <div class="container site-footer__inner">
+            <p class="site-footer__copyright">&copy; <span id="year">2026</span> Zahida Amina</p>
+            <ul class="site-footer__social">
+                <li><a href="https://www.linkedin.com/in/zahidaamina/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                <li><a href="https://github.com/zahidaamina" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            </ul>
+            <a class="back-to-top" href="#home">Back to top ↑</a>
+        </div>
+    </footer>
 </body>
 </html>
