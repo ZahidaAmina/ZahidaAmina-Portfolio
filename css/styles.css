@@ -704,6 +704,18 @@ main section h2::after {
     font-weight: 600;
 }
 
+.project-card__links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-2xs) var(--space-sm);
+    margin-top: auto;
+}
+
+.project-card__links .project-card__link {
+    margin-top: 0;
+}
+
 /* ---------- Experience & Education (vertical timeline) ---------- */
 .timeline {
     position: relative;
