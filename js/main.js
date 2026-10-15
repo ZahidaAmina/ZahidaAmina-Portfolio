@@ -10,7 +10,7 @@
     if (!nav || !toggle) return;
 
     // Matches the desktop breakpoint in css/styles.css.
-    const desktopQuery = window.matchMedia('(min-width: 900px)');
+    const desktopQuery = window.matchMedia('(min-width: 1200px)');
 
     const isOpen = () => toggle.getAttribute('aria-expanded') === 'true';
 
@@ -117,7 +117,7 @@
 
     const SELECTOR = [
         '.about__bio',
-        '.facts',
+        '.fact',
         '.skill-card',
         '.project-card',
         '.timeline__item',
@@ -132,6 +132,15 @@
 
     // The hidden state itself is gated by .js + prefers-reduced-motion in CSS.
     targets.forEach((el) => el.classList.add('reveal'));
+
+    // Stagger siblings within the same container for a cascade effect.
+    const siblingIndex = new Map();
+    targets.forEach((el) => {
+        const parent = el.parentElement;
+        const index = siblingIndex.get(parent) ?? 0;
+        siblingIndex.set(parent, index + 1);
+        el.style.setProperty('--reveal-delay', `${index * 70}ms`);
+    });
 
     const observer = new IntersectionObserver(
         (entries, obs) => {

@@ -206,6 +206,7 @@ a:hover {
 
 .btn:hover {
     background: var(--color-accent-hover);
+    color: var(--color-accent-soft);
 }
 
 .btn--ghost {
@@ -418,8 +419,8 @@ body.nav-open {
     scroll-margin-top: calc(var(--header-height) + var(--space-sm));
 }
 
-/* Desktop navigation (900px and up) */
-@media (min-width: 900px) {
+/* Desktop navigation (1200px and up) */
+@media (min-width: 1200px) {
     .site-header__inner {
         flex-direction: row;
         align-items: center;
@@ -429,7 +430,8 @@ body.nav-open {
         padding-block: 0;
     }
 
-    .nav-toggle {
+    .nav-toggle,
+    .js .nav-toggle {
         display: none;
     }
 
@@ -553,6 +555,7 @@ main section h2::after {
     border: 1px solid var(--color-border);
     border-radius: var(--radius-md);
     box-shadow: var(--shadow-sm);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease, background-color 0.25s ease;
 }
 
 .fact dt {
@@ -569,6 +572,13 @@ main section h2::after {
     font-weight: 600;
 }
 
+.fact:hover {
+    transform: translateY(-4px) scale(1.01);
+    box-shadow: var(--shadow-md);
+    border-color: var(--color-accent);
+    background: var(--color-accent-soft);
+}
+
 /* ---------- Skills ---------- */
 .skills-grid {
     display: grid;
@@ -582,12 +592,13 @@ main section h2::after {
     border: 1px solid var(--color-border);
     border-radius: var(--radius-md);
     box-shadow: var(--shadow-sm);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease, background-color 0.25s ease;
 }
 
 .skill-card:hover {
-    transform: translateY(-4px);
+    transform: translateY(-4px) scale(1.02);
     box-shadow: var(--shadow-md);
+    border-color: var(--color-accent);
 }
 
 .skill-card h3 {
@@ -654,12 +665,13 @@ main section h2::after {
     border: 1px solid var(--color-border);
     border-radius: var(--radius-md);
     box-shadow: var(--shadow-sm);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease, background-color 0.25s ease;
 }
 
 .project-card:hover {
-    transform: translateY(-4px);
+    transform: translateY(-4px) scale(1.02);
     box-shadow: var(--shadow-lg);
+    border-color: var(--color-accent);
 }
 
 .project-card h3 {
@@ -771,6 +783,14 @@ main section h2::after {
     border: 1px solid var(--color-border);
     border-radius: var(--radius-md);
     box-shadow: var(--shadow-sm);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease, background-color 0.25s ease;
+}
+
+.certification:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: var(--shadow-md);
+    border-color: var(--color-accent);
+    background: var(--color-accent-soft);
 }
 
 .certification h3 {
@@ -949,6 +969,7 @@ main section h2::after {
         opacity: 0;
         transform: translateY(20px);
         transition: opacity 0.5s ease, transform 0.5s ease;
+        transition-delay: var(--reveal-delay, 0ms);
     }
 
     .js .reveal.is-visible {
